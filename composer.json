@@ -1,0 +1,11 @@
+{
+  "require": {
+    "vlucas/phpdotenv": "^5.3",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Payone\\": "Payone/"
+    }
+  }
+}
