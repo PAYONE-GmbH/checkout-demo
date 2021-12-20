@@ -229,7 +229,7 @@ But to make the request, we need to specify entries for the array. Let's go over
 - `items` - data about our cart items;
 - `Redirect URLs` section - quite often payment method providers (PayPal, Paydirekt, etc.) redirect the customer from a third party app (our app, for example) onto their own services. In the web world,
   it means that after the customer hits the button "Pay", they get redirected to e.g. PayPal's website to complete the payment. And then PayPal redirects the customer back to the website (i.e. our app) in which they had initially hit the
-  "Pay" button. In our app, you'll be able to see it in action in use case ['Pay via Paydirekt'](../#pay-via-paydirekt)
+  "Pay" button. In our app, you'll be able to see it in action in use case ['Pay via Paydirekt'](../README.md#pay-via-paydirekt)
 - `Payment data specific to 'clearingtype'` section - different payment methods require different data. For example, to make a card payment, we of course need to know the card number (more specifically,
   its pseudo card number, which is called `pseudocardpan` in PAYONE's system). But as for Paydirekt, it requires shipping address data, like zip, city, etc.
 
@@ -239,7 +239,7 @@ For more information about the fields, check [this PAYONE's docs page](https://d
 
 PAYONE will send you a successful/erroneous response regarding your transaction. A typical response would look like this:
 
-- A successful response (it is sent if paying via a card without 3DSecure step - ['Pay via a card without 3DSecure'](/checkout-demo#pay-via-a-card-without-3dsecure)
+- A successful response (it is sent if paying via a card without 3DSecure step - ['Pay via a card without 3DSecure'](../README.md#pay-via-a-card-without-3dsecure)
 
 ```json
 {
@@ -249,7 +249,7 @@ PAYONE will send you a successful/erroneous response regarding your transaction.
 }
 ```
 
-- A redirect response (this one is sent if paying via a card that comes with a 3DSecure step - ['Pay via a card with 3DSecure'](/checkout-demo#pay-via-a-card-with-3dsecure)
+- A redirect response (this one is sent if paying via a card that comes with a 3DSecure step - ['Pay via a card with 3DSecure'](../README.md#pay-via-a-card-with-3dsecure)
 
 ```json
 {
@@ -341,7 +341,7 @@ showMessageInCheckout(paymentResponse)
 ### That's it! But we also need to verify the transaction
 
 Alright, we are pretty much finished with the payment request flow. But also, PAYONE will send a notification to your app that tells the data about a transaction - its status and other related data.
-In our demo app, we receive it straightly after a redirect payment method - ['Pay via Paydirekt'](/checkout-demo#pay-via-paydirekt).
+In our demo app, we receive it straightly after a redirect payment method - ['Pay via Paydirekt'](../README.md#pay-via-paydirekt).
 
 This important step verifies the status of the transaction - when PAYONE sends such a notification to your app,
 **it means that the transaction really went fine/with problems**, and you should update the order status
