@@ -65,6 +65,9 @@ PAYONE_INTEGRATOR_NAME=PayoneDeveloper
 ```
 _Don't have the credentials yet? Contact [PAYONE](https://www.payone.com/)_
 
+_Also, you will need to configure your [PMI (PAYONE Merchant Interface)](https://docs.payone.com/display/public/PMI/Quick+Start+Guide+-+English) -
+the web-platform for managing your interaction with PAYONE_
+
 To use Client API, we need merchant ID, portal ID, sub-account ID and a calculated hash. The hash is generated inside our PHP wrapper class. So, we'll make use of it:
 ```html
 // index.php | Lines 96-103
