@@ -47,17 +47,18 @@ class Payone
           'portalid' => $this->credentials['portalid'],
           'aid' => $this->credentials['aid']
         ];
-
         $dataToBuildHash = array_merge(
-          ['mode' => $this->generalStandardData['mode'], 'encoding' => $this->generalStandardData['encoding']],
+          [
+            'mode' => $this->generalStandardData['mode'],
+            'encoding' => $this->generalStandardData['encoding'],
+            'request' => 'creditcardcheck',
+            'responsetype' => 'JSON',
+            'storecarddata' => 'yes'
+          ],
           $credentialsWoKey
         );
-        $dataToBuildHash['request'] = 'creditcardcheck';
-        $dataToBuildHash['responsetype'] = 'JSON';
-        $dataToBuildHash['storecarddata'] = 'yes';
 
         ksort($dataToBuildHash);
-
         $neededDataStringified = join('', $dataToBuildHash);
 
         return hash_hmac('sha384', $neededDataStringified, $this->credentialsIntrinsicKey);
