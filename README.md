@@ -65,4 +65,4 @@ Prerequisites for the demo app to run are:
 ### Receive example transaction status notification
 This is shown in the last seconds of 'Pay via a card with 3DSecure' and 'Pay via Paydirekt' showcases
 
-For the test data - follow more our more detailed Readme's section ["Use cases' test data"](/_docs/detailed-readme.md#use-cases-test-data)
+For the test data - follow our more detailed Readme's section ["Use cases' test data"](/_docs/detailed-readme.md#use-cases-test-data)
