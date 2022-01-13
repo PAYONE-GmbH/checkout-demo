@@ -27,7 +27,7 @@ install the app locally.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/PAYONE-GmbH/checkout-demo)
 
-2. Create a new `.env` file and then populate it with your PAYONE credentials like in `.env.example`
+2. Populate the pre-created `.env` file with your PAYONE credentials like in `.env.example`
 3. Run `php -S 0.0.0.0:3000` command in terminal (``Ctrl + Shift + ` ``) to run the PHP built-in server
 4. Then, in Gitpod, you should see a pop-up showing up on the right allowing you to go to a browser - just 
 click 'Open browser' 🙂
