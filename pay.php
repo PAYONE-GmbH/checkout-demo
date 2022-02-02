@@ -27,7 +27,7 @@ foreach ($frontendCartItems as $frontendCartItem) {
 }
 
 $backToAppUrl = "";
-if ($_SERVER['HTTP_X_FORWARDED_HOST']) { // if it's a Gitpod instance, then use Gitpod's workspace URL; else - ours from, most probably, localhost
+if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) { // if it's a Gitpod instance, then use Gitpod's workspace URL; else - ours from, most probably, localhost
   $backToAppUrl = "https://{$_SERVER['HTTP_X_FORWARDED_HOST']}";
 } else {
   $backToAppUrl = "http://{$_SERVER['HTTP_HOST']}";
