@@ -4,8 +4,8 @@ This demo app shows example [use cases](#use-cases-overview) for an online-payme
 The app shows a usage scenario for an e-shop that allows card, PayPal, and Paydirekt payment methods.
 
 ## Use cases overview
-1. [Pay via a card (with/without 3DSecure)](#pay-via-a-card-without-3dsecure)
-2. [Pay via PayPal and Paydirekt](#pay-via-paydirekt)
+1. [Pay via a Credit Card (with/without 3DSecure)](#pay-via-a-card-without-3dsecure)
+2. [Pay via PayPal and paydirekt](#pay-via-paydirekt)
 3. [Receive an example transaction status notification from the PAYONE system](#receive-example-transaction-status-notification)
 
 ## How to read the Readme?
@@ -53,16 +53,16 @@ Prerequisites for the demo app to run are:
 - cURL installed on the server and `php-curl` extension
 
 ## Use cases' showcase
-### Pay via a card without 3DSecure
+### Pay via Credit Card without 3DSecure
 ![](_docs/gifs/card-without-3ds.gif)
 
-### Pay via a card with 3DSecure
+### Pay via Credit Card with 3DSecure
 ![](_docs/gifs/card-with-3ds.gif)
 
-### Pay via Paydirekt
+### Pay via paydirekt
 ![](_docs/gifs/paydirekt.gif)
 
 ### Receive example transaction status notification
-This is shown in the last seconds of 'Pay via a card with 3DSecure' and 'Pay via Paydirekt' showcases
+This is shown in the last seconds of 'Pay via Credit Card with 3DSecure' and 'Pay via paydirekt' showcases
 
 For the test data - follow our more detailed Readme's section ["Use cases' test data"](/_docs/detailed-readme.md#use-cases-test-data)
