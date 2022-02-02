@@ -1,10 +1,10 @@
 # PAYONE checkout demo app
 
-This demo app shows example [use cases](#use-cases-overview) for an online-payment and serves as a demonstration of PAYONE's API usage and its concepts.
-The app shows a usage scenario for an e-shop that allows card, PayPal, and Paydirekt payment methods.
+The demo app shows example [use cases](#use-cases-overview) for an online-payment and serves as a demonstration of PAYONE's API usage and its concepts.
+The app shows a usage scenario for an e-shop that allows Credit Card, PayPal and paydirekt payment methods.
 
 ## Use cases overview
-1. [Pay via a Credit Card (with/without 3DSecure)](#pay-via-a-card-without-3dsecure)
+1. [Pay via Credit Card (with/without 3DSecure)](#pay-via-a-card-without-3dsecure)
 2. [Pay via PayPal and paydirekt](#pay-via-paydirekt)
 3. [Receive an example transaction status notification from the PAYONE system](#receive-example-transaction-status-notification)
 
